@@ -771,7 +771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 101.41, y: -2.6699996, z: -10}
+  m_LocalPosition: {x: -14.38, y: 1.1800002, z: -10}
   m_LocalScale: {x: 0.57, y: 0.57, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57112,7 +57112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894543267}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2567837, y: 0.0013501502, z: 523.6091}
+  m_LocalPosition: {x: -116.691666, y: 3.8062925, z: 523.6091}
   m_LocalScale: {x: 0.6918077, y: 0.59297806, z: 0.98829675}
   m_Children:
   - {fileID: 984604574}
@@ -57433,7 +57433,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1196465654
 Canvas:
   m_ObjectHideFlags: 0
@@ -57508,7 +57508,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  Bulletanimation: {fileID: 5972717703001973101, guid: 12795560c7ff5a540ba80fe52707a5af, type: 3}
   deathEffect: {fileID: 4336604838804411626, guid: 3b45e47beaf056141b523f5962d64783, type: 3}
 --- !u!50 &1344113526
 Rigidbody2D:
@@ -57530,7 +57529,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 7
 --- !u!212 &1344113527
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -68211,7 +68210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497055044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 101.41, y: -3.07, z: 0}
+  m_LocalPosition: {x: -14.38, y: 0.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1810175331}
@@ -68235,7 +68234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1497055050}
   animator: {fileID: 1497055052}
-  runSpeed: 60
+  runSpeed: 95
 --- !u!114 &1497055050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68248,7 +68247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837790de5b64f0544a68b11ee6450045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 550
+  m_JumpForce: 650
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -68303,7 +68302,7 @@ Animator:
   m_GameObject: {fileID: 1497055044}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e2df8dbe23f292b4d8a0fa76f95d9864, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2aa618d438d5d534a9893766af7306be, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
 
     public int health = 100;
-    public GameObject Bulletanimation;
+    
     public GameObject deathEffect;
 
     public void TakeDamage(int damage)
@@ -23,6 +23,6 @@ public class Enemy : MonoBehaviour
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
-        Destroy(Bulletanimation);
+       
     }
 }

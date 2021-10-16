@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: bullet ani
+  m_Name: shoot1
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 9c56ef6f982e8914daf8714d5bcd9cea, type: 3}
-    - time: 0.11666667
-      value: {fileID: 21300000, guid: 10aa3a116ac3b5b48a4baafd59720ea2, type: 3}
+      value: {fileID: 21300000, guid: 2d81263c15e0870429e027cfa336f392, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 2ac0bdb1f72273446853e8d81225c348, type: 3}
+    - time: 0.43333334
+      value: {fileID: 21300000, guid: 080098adc5ac9cc428f1a442160eef31, type: 3}
+    - time: 0.5833333
+      value: {fileID: 21300000, guid: 2d81263c15e0870429e027cfa336f392, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,14 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 9c56ef6f982e8914daf8714d5bcd9cea, type: 3}
-    - {fileID: 21300000, guid: 10aa3a116ac3b5b48a4baafd59720ea2, type: 3}
+    - {fileID: 21300000, guid: 2d81263c15e0870429e027cfa336f392, type: 3}
+    - {fileID: 21300000, guid: 2ac0bdb1f72273446853e8d81225c348, type: 3}
+    - {fileID: 21300000, guid: 080098adc5ac9cc428f1a442160eef31, type: 3}
+    - {fileID: 21300000, guid: 2d81263c15e0870429e027cfa336f392, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.13333334
+    m_StopTime: 0.59999996
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
