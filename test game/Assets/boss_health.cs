@@ -33,7 +33,7 @@ public class boss_health : MonoBehaviour
     {
 //        Instantiate(deathanimation, transform.position, Quaternion.identity);
         Destroy(gameObject);
-
+        Destroy(GameObject.Find("boss Canvas"));
     }
 
 }
