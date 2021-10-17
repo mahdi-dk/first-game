@@ -13,14 +13,18 @@ public class cinemachineswitcher : MonoBehaviour
     private CinemachineVirtualCamera vcam2;//boss cam
     void Start()
     {
-
+    
     }
      void Update()
     {
-        if (animator.GetBool("InRoom") == true)
-        {
-            SwitchPriority();
+        if (animator != null)
+        { 
+           if (animator.GetBool("InRoom") == true)
+            {
+                SwitchPriority();
+            }        
         }
+
     }
     void SwitchPriority()
     {
