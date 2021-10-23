@@ -5,6 +5,7 @@ using Cinemachine;
 
 public class cinemachineswitcher : MonoBehaviour
 {
+    public GameObject boss;
     public Animator animator;
     private bool player_cam =true;
     [SerializeField]
@@ -25,6 +26,17 @@ public class cinemachineswitcher : MonoBehaviour
             }        
         }
 
+        //switch to player cam when boss dies
+        if (boss != null)
+        {
+
+        }
+        else 
+        { 
+            vcam1.Priority = 1;
+            vcam2.Priority = 0;
+        }
+        
     }
     void SwitchPriority()
     {

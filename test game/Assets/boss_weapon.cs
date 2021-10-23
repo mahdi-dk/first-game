@@ -23,7 +23,6 @@ public class boss_weapon : MonoBehaviour
 		{
 			colInfo.GetComponent<player_health>().TakeDamage(attackDamage);
 		}
-		Debug.Log("attacking");
 	}
 
 	public void EnragedAttack()

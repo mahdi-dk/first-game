@@ -9,7 +9,11 @@ public class boss : MonoBehaviour
 	public Transform bossright;
 	public bool isFlipped = false;
 
-	public void LookAtPlayer()
+    private void Update()
+    {
+		player = GameObject.FindGameObjectWithTag("Player").transform;
+	}
+    public void LookAtPlayer()
 	{
 		Vector3 flipped = transform.localScale;
 		flipped.z *= -1f;

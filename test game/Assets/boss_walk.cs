@@ -8,14 +8,13 @@ public class boss_walk : StateMachineBehaviour
     public float speed = 2.5f;
     public float attackRange = 2f;
 
-    Transform player;
+    public Transform player;
     Rigidbody2D rb;
     boss boss;
     
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;   
         rb =animator.GetComponent<Rigidbody2D>();
         boss = animator.GetComponent<boss>();
     }
@@ -23,6 +22,8 @@ public class boss_walk : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform; 
+
         if (player != null)
         {
             boss.LookAtPlayer();

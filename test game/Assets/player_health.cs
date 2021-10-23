@@ -58,7 +58,6 @@ void die()
     {
         Instantiate(deathanimation, transform.position, Quaternion.identity);
         Destroy(gameObject);
-
     }
 
 }
