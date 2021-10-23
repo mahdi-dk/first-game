@@ -11,7 +11,11 @@ public class boss : MonoBehaviour
 
     private void Update()
     {
-		player = GameObject.FindGameObjectWithTag("Player").transform;
+		if (player !=null)
+		{
+		player = GameObject.FindGameObjectWithTag("Player").transform;			
+		}
+
 	}
     public void LookAtPlayer()
 	{
