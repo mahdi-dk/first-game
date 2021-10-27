@@ -28,5 +28,6 @@ public class Bullet : MonoBehaviour
             boss.TakeDamage(damage);
         }
         Destroy(gameObject);
+        
     }
 }
