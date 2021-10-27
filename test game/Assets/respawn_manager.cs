@@ -11,6 +11,7 @@ public class respawn_manager : MonoBehaviour
     public Transform respawnpoint;
     public int playerNum = 0;
     public CinemachineVirtualCamera playerCam;//player cam
+    public int spawnDelay = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,24 +25,24 @@ public class respawn_manager : MonoBehaviour
 
         if (player != null)
         {
-//            Debug.Log("player is here!!");
-              followPlayer();
+            //Debug.Log("player is here!!");
+
         }
         else if(playerNum <1)
         {
             playerNum++;
             respawn();
 
-
         }
     }
 
     void respawn() 
     {
+        Invoke("FollowPlayer", 1.5f);
         playerNum = 0;
         PrefabUtility.InstantiatePrefab(playerPrefab.gameObject as GameObject);
     }
-    void followPlayer()
+    void FollowPlayer()
     {
         playerCam.m_Follow = player.transform;
     }
