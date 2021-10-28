@@ -9,7 +9,7 @@ public class respawn_manager : MonoBehaviour
     public GameObject player;
     public GameObject playerPrefab;
     public Transform respawnpoint;
-    public int playerNum = 0;
+    bool playerDead = false;
     public CinemachineVirtualCamera playerCam;//player cam
     public int spawnDelay = 1;
     // Start is called before the first frame update
@@ -25,21 +25,31 @@ public class respawn_manager : MonoBehaviour
 
         if (player != null)
         {
+
+        }
+        else 
+        {
+            playerDead = true;            
+        }
+
+        if (player != null)
+        {
             //Debug.Log("player is here!!");
 
         }
-        else if(playerNum <1)
+        else if(playerDead ==true)
         {
-            playerNum++;
+//            playerDead=false;
             respawn();
 
         }
+
     }
 
     void respawn() 
     {
         Invoke("FollowPlayer", 1.5f);
-        playerNum = 0;
+        playerDead = false;
         PrefabUtility.InstantiatePrefab(playerPrefab.gameObject as GameObject);
     }
     void FollowPlayer()
