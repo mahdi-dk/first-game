@@ -21,8 +21,8 @@ public class respawn_manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.Find("player");
-
+        player = GameObject.FindGameObjectWithTag("Player");
+        
         if (player != null)
         {
 
@@ -50,7 +50,7 @@ public class respawn_manager : MonoBehaviour
     {
         Invoke("FollowPlayer", 1.5f);
         playerDead = false;
-        PrefabUtility.InstantiatePrefab(playerPrefab.gameObject as GameObject);
+        Instantiate(playerPrefab.gameObject as GameObject);
     }
     void FollowPlayer()
     {
